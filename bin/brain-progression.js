@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { startGame } from "../src/startGame.js";
 import { generationNumber } from "../src/helpers/helpers.js";
 export const progression = () => {

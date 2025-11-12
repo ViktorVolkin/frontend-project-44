@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { generationNumber, isPrime } from "../src/helpers/helpers.js";
 import { startGame } from "../src/startGame.js";
 function brainPrime() {
