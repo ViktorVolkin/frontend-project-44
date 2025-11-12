@@ -7,7 +7,7 @@ export const isEven = (num) => {
 
 export const generationMathOperator = () => {
 	const possibleOperators = ["*", "+", "-"];
-	return possibleOperators[generationNumber(0, 3)];
+	return possibleOperators[generationNumber(0, 2)];
 };
 export const calc = (num1, num2, operator) => {
 	switch (operator) {
