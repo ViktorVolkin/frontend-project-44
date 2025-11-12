@@ -1,6 +1,14 @@
-import globals from "globals";
-import { defineConfig } from "eslint/config";
-
-export default defineConfig([
-  { files: ["**/*.{js,mjs,cjs}"], languageOptions: { globals: globals.browser } },
-]);
+export default [
+  {
+    files: ['**/*.js'],
+    languageOptions: { ecmaVersion: 2022, sourceType: 'module' },
+    rules: {
+      '@stylistic/quotes': ['error', 'single'],
+      '@stylistic/semi': ['error', 'never'],
+      '@stylistic/indent': ['error', 2],
+      '@stylistic/no-tabs': 'error',
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+    },
+    ignores: ['node_modules/', 'dist/'],
+  },
+]
