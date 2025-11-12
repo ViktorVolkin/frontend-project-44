@@ -6,13 +6,11 @@ export const isEven = (num) => {
 };
 
 export const generationMathOperator = () => {
-	const possibleOperators = ["/", "*", "+", "-"];
+	const possibleOperators = ["*", "+", "-"];
 	return possibleOperators[generationNumber(0, 3)];
 };
 export const calc = (num1, num2, operator) => {
 	switch (operator) {
-		case "/":
-			return Math.floor(num1 / num2);
 		case "*":
 			return Math.floor(num1 * num2);
 		case "+":
